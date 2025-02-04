@@ -30,7 +30,10 @@ const getRange = (array) => {
   return Math.max(...array) - Math.min(...array);
 }
 
-
+const getVariance = (array)=>{
+  const mean = getMean(array);
+  const differences = array.map((el)=> el - mean);
+}
 
 const calculate = () => {
   const value = document.querySelector("#numbers").value;
